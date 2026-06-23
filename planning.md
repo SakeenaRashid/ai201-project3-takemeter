@@ -43,9 +43,21 @@ r/Coffee is an active, text-heavy community where discourse ranges from equipmen
 
 **Edge case:** A post mentions a specific piece of gear AND describes a positive coffee experience.
 
-*Example: "I just got a new Comandante grinder and my pour over has never tasted better!"*
+*Example 1: "I just got a new Comandante grinder and my pour over has never tasted better!"*
 
 This post could reasonably belong to `gear` or `good_coffee`.
+
+*Example 2 (difficult): "If you don't have one already get a good grinder. The Timemore C2 and 1zpresso JX have been total game changers for me paired with my V60. Been making some of the best coffee I've ever had."*
+
+Could be gear (mentions specific grinders) or good_coffee (describes a great coffee experience).
+
+Decision: Labeled gear, specific equipment is named and recommended, per the decision rule that any mention of gear takes priority.
+
+*Example 3 (difficult): "I accidentally used 1:18 this morning vs. 1:16 that I normally do and I noticed a significant reduction in the bitter/sour notes, and it was a more pleasant experience overall."*
+
+Could be brewing_methods (ratio discussion) or good_coffee (describing a pleasant experience).
+
+Decision: Labeled brewing_methods the post is explaining a technique variable and its effect, not primarily describing the sensory experience of a coffee.
 
 **Decision rule:** If gear is mentioned anywhere in the post, label it `gear`. Equipment recommendations have unique practical value to the community regardless of experiential framing. `good_coffee` is reserved for posts where no specific gear is referenced.
 
