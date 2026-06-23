@@ -1,0 +1,13 @@
+{
+  "baseline_accuracy": 0.7333,
+  "finetuned_accuracy": 0.6667,
+  "improvement": -0.0667,
+  "test_set_size": 30,
+  "label_map": {
+    "brewing_methods": 0,
+    "gear": 1,
+    "good_coffee": 2,
+    "coffee_rants": 3
+  },
+  "model": "distilbert-base-uncased"
+}
